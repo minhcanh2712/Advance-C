@@ -13,8 +13,6 @@ printf("Gia tri cua bien a ban dau : %d\n", *ptr);
 printf("Gia tri cua bien a luc sau : %d\n", a);
 }
 Kết quả:
-PS D:\C,C++ Hala academy\Pointer>                                                                                                                        > "d:\C,C++ Hala academy\Pointer\" ; if ($?) { gcc pointer.c -o pointer } ; if ($?) { .\pointer }
-d:\C,C++ Hala academy\Pointer\
 Dia chi : 00000087037FFE04
 Dia chi : 00000087037FFE04
 Gia tri cua bien a ban dau : 100
