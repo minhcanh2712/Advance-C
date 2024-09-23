@@ -75,3 +75,31 @@ Kết quả:
  27 * 12 = 324
  27 / 12 = 2.250000
 
+III. Pointer to constant: Là cách định nghĩa một con trỏ không thể thay đổi giá trị tại địa chỉ mà nó trỏ đến thông qua dereference nhưng giá trị tại địa chỉ đó có thể thay đổi.
+     Tại đại chỉ con trỏ hằng trỏ đến chỉ có thể đọc được giá trị không thể thay đổi
+     Có thể trỏ đến nhều địa chỉ khác nhau
+     
+Ví dụ:
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    
+    int value = 27;
+    int test = 12;
+    int const *ptr_const = &value; // gia tri con tro hang tai dia chi value
+
+    //*ptr_const = 7; // khong the thay doi gia tri con tro hang
+    //ptr_const = &test; // co the tro den nhieu dia chi khac nhau
+    
+    printf("value: %d\n", *ptr_const);
+
+    value = 14; // chi co the thay doi gia tri con tro hang bang cach thay doi gia tri tai bien duoc khai bao
+    printf("value: %d\n", *ptr_const);
+    
+    return 0;
+}
+Kết quả:
+    value: 27 // giá trị con trỏ hằng trước khi thay đổi giá trị value
+    value: 14 // giá trị con trỏ hằng sau khi thay đổi giá trị value
+=> chỉ có thể thay đổi giá trị con trỏ hằng bằng cách thay đổi giá trị biến value
