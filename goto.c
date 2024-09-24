@@ -34,21 +34,22 @@ void calculateData() {
 }
 
 int main(){
-    TRY {
+    TRY{
         readFile();
         networkOperation();
         calculateData();
-    } CATCH(FILE_ERROR) {
+    }
+    CATCH(FILE_ERROR) {
         printf("%s\n", error_message);
         }
-    TRY {
+    TRY{
         networkOperation(); 
     } 
     CATCH(NETWORK_ERROR) {
         printf("Error: %s\n", error_message);
     }
 
-    TRY {
+    TRY{
         calculateData();    
     } 
     CATCH(CALCULATION_ERROR) {
