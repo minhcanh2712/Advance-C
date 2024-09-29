@@ -32,3 +32,7 @@ a * a = 729
 a * a = 729
 a * a = 729
 a * a = 144
+
+Static global variables: Bị giới hạn phạm vi đối trượng trong file khai báo.
+
+
