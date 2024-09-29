@@ -1,0 +1,5 @@
+Static local variables
+•	Giúp lưu trữ địa chỉ biến xuyên suốt chương trình.
+•	Giúp lưu trữ giá trị của biến ở lần gọi trước đó.
+•	Vd: static int a = 6;  // sẽ được lưu giá trị a = 6 cho lần tiếp theo
+•	Có thể truy cập, thay đổi biến cục bộ thông qua con trỏ.
