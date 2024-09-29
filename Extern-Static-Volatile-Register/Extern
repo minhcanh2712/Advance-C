@@ -1,0 +1,6 @@
+EXTERN
+•	Được sử dụng để tránh việc tốn bộ nhớ khi gọi nhiều file. Giúp biến hoặc hàm được định nghĩa và sử dụng ở vị trí khác.
+•	Muốn khai báo extern thì các biến, hàm phải ở toàn cuc.
+•	Giúp cho các file trong cùng thư mục có thể chia sẽ các biến, các hàm cho lẫn nhau.
+•	Không sử dụng include phải liên kết file
+
