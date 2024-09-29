@@ -3,3 +3,32 @@ Static local variables
 •	Giúp lưu trữ giá trị của biến ở lần gọi trước đó.
 •	Vd: static int a = 6;  // sẽ được lưu giá trị a = 6 cho lần tiếp theo
 •	Có thể truy cập, thay đổi biến cục bộ thông qua con trỏ.
+
+Ví dụ:
+
+#include<stdio.h>
+
+int *ptr = NULL;
+
+void count(){
+    static int a = 27;
+    ptr = &a;
+    a * a;
+    printf("a * a = %d\n", a * a);
+}
+
+int main(int argc, char const *argv[]){
+    count();
+    count();
+    count();
+    *ptr = 12;
+    count();
+
+    return 0;
+
+}
+Kết quả:
+a * a = 729
+a * a = 729
+a * a = 729
+a * a = 144
