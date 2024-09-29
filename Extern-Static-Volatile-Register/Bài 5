@@ -1,0 +1,2 @@
+# Extern
+Được sử dụng để tránh vieecj tốn bộ nhớ khi gọi nhiều file. Giúp biến hoặc hàm được định nghĩa và sử dụng ở vị trí khác.
